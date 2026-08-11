@@ -4,14 +4,14 @@
   "version": "1.0.0",
   "items": [
     {
-      "url": "index.html",
+      "url": "https://graus-gh.github.io/graus-fleet-addin/index.html",
       "path": "ActivityLink/",
       "menuName": {
         "en": "GRAUS Fleet Dashboard",
         "it": "Cruscotto Flotta GRAUS",
         "de": "GRAUS Flotten-Dashboard"
       },
-      "icon": "icon.svg"
+      "icon": "https://graus-gh.github.io/graus-fleet-addin/icon.svg"
     }
   ],
   "isSigned": false
