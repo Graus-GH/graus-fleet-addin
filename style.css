@@ -105,19 +105,23 @@
 .gf-main {
   flex: 1;
   display: flex;
+  flex-direction: column;
   gap: 12px;
-  min-height: 400px;
+  min-height: 0;
 }
 
 #gf-map {
-  flex: 1;
+  height: 220px;
+  flex: none;
+  width: 100%;
   border-radius: 8px;
   border: 1px solid var(--gf-border);
   overflow: hidden;
 }
 
 .gf-sidebar {
-  width: 300px;
+  width: 100%;
+  flex: 1;
   background: #fff;
   border: 1px solid var(--gf-border);
   border-radius: 8px;
