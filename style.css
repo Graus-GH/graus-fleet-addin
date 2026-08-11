@@ -1,0 +1,162 @@
+:root {
+  --graus-blue: #005caa;
+  --graus-blue-dark: #003f75;
+  --gf-bg: #f4f6f8;
+  --gf-border: #e0e4e8;
+  --gf-text: #1f2933;
+  --gf-text-light: #6b7684;
+}
+
+#graus-fleet-addin {
+  font-family: "Hanken Grotesk", "Segoe UI", Arial, sans-serif;
+  color: var(--gf-text);
+  background: var(--gf-bg);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.gf-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.gf-header h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--graus-blue-dark);
+  margin: 0;
+}
+
+.gf-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gf-select {
+  border: 1px solid var(--gf-border);
+  border-radius: 6px;
+  padding: 7px 10px;
+  font-size: 13px;
+  background: #fff;
+  color: var(--gf-text);
+  min-width: 160px;
+}
+
+.gf-btn {
+  background: var(--graus-blue);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.gf-btn:hover { background: var(--graus-blue-dark); }
+
+.gf-hidden { display: none; }
+
+.gf-vehicle-meta {
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.gf-sidebar h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--gf-text-light);
+  margin: 0 0 8px 0;
+}
+
+.gf-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.gf-kpi {
+  background: #fff;
+  border: 1px solid var(--gf-border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gf-kpi-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--graus-blue);
+}
+
+.gf-kpi-label {
+  font-size: 12px;
+  color: var(--gf-text-light);
+}
+
+.gf-main {
+  flex: 1;
+  display: flex;
+  gap: 12px;
+  min-height: 400px;
+}
+
+#gf-map {
+  flex: 1;
+  border-radius: 8px;
+  border: 1px solid var(--gf-border);
+  overflow: hidden;
+}
+
+.gf-sidebar {
+  width: 300px;
+  background: #fff;
+  border: 1px solid var(--gf-border);
+  border-radius: 8px;
+  padding: 12px;
+  overflow-y: auto;
+}
+
+.gf-sidebar h2 {
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  color: var(--graus-blue-dark);
+}
+
+.gf-stop-item {
+  border-bottom: 1px solid var(--gf-border);
+  padding: 8px 0;
+  font-size: 13px;
+}
+
+.gf-stop-item .gf-device-name {
+  font-weight: 600;
+}
+
+.gf-stop-item .gf-duration {
+  color: var(--graus-blue);
+  font-weight: 600;
+}
+
+.gf-empty {
+  color: var(--gf-text-light);
+  font-size: 13px;
+}
+
+/* Leaflet marker labels */
+.gf-marker-label {
+  background: #fff;
+  border: 1px solid var(--gf-border);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 11px;
+  white-space: nowrap;
+}
